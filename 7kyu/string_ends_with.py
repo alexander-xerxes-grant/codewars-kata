@@ -13,10 +13,13 @@ def solution(string, ending):
     return False
 
 def solution(string, ending):
-    if re.search(fr"{ending}$", string) is not None:
+    escaped = re.escape(ending)
+    if re.search(fr"{escaped}$", string) is not None:
         return True
     return False
 
-print(solution('abc', 'bc')) 
-print(solution('abc', 'd'))
-print(solution('abcde', ''))
+# print(solution('abc', 'bc')) 
+# print(solution('abc', 'd'))
+# print(solution('abcde', ''))
+print(solution('!@#$%^&*() :-)', ':-)'))
+print(solution('abc\n', 'abc'))
