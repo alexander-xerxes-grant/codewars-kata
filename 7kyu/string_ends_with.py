@@ -13,7 +13,7 @@ def solution(string, ending):
     return False
 
 def solution(string, ending):
-    if re.search(ending, string) is not None:
+    if re.search(fr"{ending}$", string) is not None:
         return True
     return False
 
