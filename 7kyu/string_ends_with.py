@@ -5,10 +5,15 @@
 # solution('abc', 'bc') # returns True
 # solution('abc', 'd') # returns False
 # (solution('abcde', '')) # returns True
-import regex as re
+import re
 
 def solution(string, ending):
     if string.endswith(ending):
+        return True
+    return False
+
+def solution(string, ending):
+    if re.search(ending, string) is not None:
         return True
     return False
 
