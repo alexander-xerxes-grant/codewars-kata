@@ -2,15 +2,16 @@
 
 # Examples:
 
-# solution('abc', 'bc') # returns true
-# solution('abc', 'd') # returns false
+# solution('abc', 'bc') # returns True
+# solution('abc', 'd') # returns False
+# (solution('abcde', '')) # returns True
+import regex as re
 
 def solution(string, ending):
-    length = len(ending) - 1
-    if string[length:] == ending:
+    if string.endswith(ending):
         return True
-    else:
-        return False
+    return False
 
 print(solution('abc', 'bc')) 
-print(solution('abc', 'd')) 
+print(solution('abc', 'd'))
+print(solution('abcde', ''))
