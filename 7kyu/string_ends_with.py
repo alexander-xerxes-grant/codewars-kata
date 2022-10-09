@@ -6,8 +6,7 @@
 # solution('abc', 'd') # returns false
 
 def solution(string, ending):
-    length = len(ending)
-    print(string[length:])
+    length = len(ending) - 1
     if string[length:] == ending:
         return True
     else:
