@@ -7,8 +7,8 @@
 
 def solution(string, ending):
     length = len(ending)
-    print(string[:length])
-    if string[:length] == ending:
+    print(string[length:])
+    if string[length:] == ending:
         return True
     else:
         return False
