@@ -20,4 +20,4 @@ def sum_array_without_highest_or_lowest_number(arr):
 
 print(sum_array_without_highest_or_lowest_number([6, 2, 1, 8, 10]))
 sum_array_without_highest_or_lowest_number([])
-sum_array_without_highest_or_lowest_number(None)
+sum_array_without_highest_or_lowest_number(None) 

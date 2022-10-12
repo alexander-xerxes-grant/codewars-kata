@@ -13,5 +13,5 @@ def solution(string, ending):
     else:
         return False
 
-print(solution('abc', 'bc')) # returns true
-print(solution('abc', 'd')) # returns false
+print(solution('abc', 'bc')) 
+print(solution('abc', 'd')) 
