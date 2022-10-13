@@ -5,10 +5,13 @@
 # solution('abc', 'bc') # returns true
 # solution('abc', 'd') # returns false
 
-def solutio(string, ending):
+def solution(string, ending):
     length = len(ending)
-
+    print(string[:length])
     if string[:length] == ending:
         return True
     else:
         return False
+
+print(solution('abc', 'bc')) # returns true
+print(solution('abc', 'd')) # returns false
