@@ -6,4 +6,8 @@
 # solution('abc', 'd') # returns false
 
 def solution(string, ending):
-    return True
+    length = len(ending)
+    if string[:length] == ending:
+        return True
+    else:
+        return False
