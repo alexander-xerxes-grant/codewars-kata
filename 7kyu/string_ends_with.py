@@ -6,5 +6,5 @@
 # solution('abc', 'd') # returns false
 
 def solution(string, ending):
-    # your code here...
+    
     pass
