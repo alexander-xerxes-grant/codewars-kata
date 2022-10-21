@@ -7,6 +7,7 @@
 
 def solution(string, ending):
     length = len(ending)
+    
     if string[:length] == ending:
         return True
     else:
