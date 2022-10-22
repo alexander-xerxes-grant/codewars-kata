@@ -10,5 +10,4 @@ def solution(string, ending):
     if string[:length] == ending:
         return True
     else:
-        
         return False
