@@ -15,5 +15,11 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 """
 
 def cakes(recipe, available):
-    if all(k in recipe.keys() for k in available.keys()):
-        return 0
+    least_amount_of_cakes = float("inf")
+    for key, value in recipe.items():
+        if key in available.keys():
+            if available[key] // recipe[key] < least_amount_of_cakes:
+                least_amount_of_cakes = available[key] // recipe[key]
+        else:
+            return 0
+    return least_amount_of_cakes
