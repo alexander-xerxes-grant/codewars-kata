@@ -23,12 +23,7 @@ alphabet = string.ascii_letters
 print(alphabet)
 
 def same_case(a, b): 
-    if a not in alphabet or b not in alphabet:
-        return -1
-    elif a.isupper() == b.isupper():
-        return 1
-    else:
-        return 0
+    return a.isupper() == b.isupper() if a.isalpha() and b.isalpha() else -1
 
 
 print(same_case('C', 'B') )
