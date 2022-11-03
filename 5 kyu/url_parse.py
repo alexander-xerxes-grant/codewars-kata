@@ -1,9 +1,15 @@
-import tldextract
+from urllib.parse import urlsplit, urlparse
+
+
 
 def url_parser(url: str) -> str:
-    result = tldextract.extract(url).domain
-    return result
+    return url.split('//')[-1].split('www.')[-1].split('.')[0]
 
 
 
-print(url_parser("http://www.google.com"))
+
+print(url_parser("www.google.com"))
+print(url_parser("http://google.com"))
+print(url_parser("google.com"))
+print(url_parser("https://www.google.co.uk"))
+
