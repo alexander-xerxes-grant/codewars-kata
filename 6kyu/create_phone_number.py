@@ -8,9 +8,8 @@
 
 import phonenumbers
 
-def create_phone_number(list_of_ints):
-    temp_list = [int for int in list_of_ints]
-    return f"({temp_list[0]}{temp_list[1]}{temp_list[2]}) {temp_list[3]}{temp_list[4]}{temp_list[5]}-{temp_list[6]}{temp_list[7]}{temp_list[8]}{temp_list[9]}"
+def create_phone_number(n):
+    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
 
 
 
