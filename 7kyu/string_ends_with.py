@@ -7,19 +7,22 @@
 # (solution('abcde', '')) # returns True
 import re
 
+
 def solution(string, ending):
     if string.endswith(ending):
         return True
     return False
 
+
 def solution(string, ending):
     escaped = re.escape(ending)
-    if re.search(fr"{escaped}$", string) is not None:
+    if re.search(rf"{escaped}$", string) is not None:
         return True
     return False
 
-# print(solution('abc', 'bc')) 
+
+# print(solution('abc', 'bc'))
 # print(solution('abc', 'd'))
 # print(solution('abcde', ''))
-print(solution('!@#$%^&*() :-)', ':-)'))
-print(solution('abc\n', 'abc'))
+print(solution("!@#$%^&*() :-)", ":-)"))
+print(solution("abc\n", "abc"))

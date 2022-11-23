@@ -14,6 +14,7 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 
 """
 
+
 def cakes(recipe, available):
     least_amount_of_cakes = float("inf")
     for key, value in recipe.items():

@@ -14,7 +14,6 @@ def array_diff(a, b):
     return temp3
 
 
+print(array_diff([1, 2], [1]))
 
-print(array_diff([1,2], [1]))
-
-#change
+# change

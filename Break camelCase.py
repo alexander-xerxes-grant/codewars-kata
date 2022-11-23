@@ -1,6 +1,6 @@
 def solution(s):
-    result = ''
-    
+    result = ""
+
     for char in s:
         if char.isupper() and char != s[0]:
             result += " " + char

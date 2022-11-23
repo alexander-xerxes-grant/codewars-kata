@@ -17,17 +17,17 @@
 
 import string
 
-
 alphabet = string.ascii_letters
 
 print(alphabet)
 
-def same_case(a, b): 
+
+def same_case(a, b):
     return a.isupper() == b.isupper() if a.isalpha() and b.isalpha() else -1
 
 
-print(same_case('C', 'B') )
-print(same_case('b', 'a'))
-print(same_case('H', ':'))
-print(same_case('\t', 'Z'))
-print(same_case('b', 'Z'))
+print(same_case("C", "B"))
+print(same_case("b", "a"))
+print(same_case("H", ":"))
+print(same_case("\t", "Z"))
+print(same_case("b", "Z"))

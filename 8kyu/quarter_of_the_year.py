@@ -4,8 +4,10 @@
 
 from math import ceil
 
+
 def quarter_of(month):
-    return ceil(month/3)
+    return ceil(month / 3)
+
 
 print(quarter_of(1))
 print(quarter_of(2))

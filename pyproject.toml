@@ -12,6 +12,9 @@ phonenumbers = "^8.12.57"
 tldextract = "^3.4.0"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+black = "^22.10.0"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

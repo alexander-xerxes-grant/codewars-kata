@@ -11,12 +11,14 @@
 # Input validation
 # If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 
+
 def sum_array_without_highest_or_lowest_number(arr):
     if not arr or len(arr) < 1:
         return 0
     arr.remove(min(arr))
     arr.remove(max(arr))
     return sum(arr)
+
 
 print(sum_array_without_highest_or_lowest_number([6, 2, 1, 8, 10]))
 sum_array_without_highest_or_lowest_number([])

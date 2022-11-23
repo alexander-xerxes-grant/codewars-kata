@@ -10,6 +10,7 @@
 
 def descending_sort(n):
 
-    return int(''.join(sorted(i for i in str(n))[::-1]))
+    return int("".join(sorted(i for i in str(n))[::-1]))
+
 
 print(descending_sort(42145))

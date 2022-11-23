@@ -23,6 +23,7 @@
 # Note
 # This kata uses fixed tolerance for simplicity reasons, but usually relative tolerance is better. Fixed tolerance is useful for comparisons near zero or when the magnitude of the values is known.
 
+
 def approx_equals(a, b):
-    #return true if the absolute value of a - b is less than 0.001
+    # return true if the absolute value of a - b is less than 0.001
     return abs(a - b) < 0.001

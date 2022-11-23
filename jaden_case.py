@@ -1,13 +1,10 @@
-
-
 def to_jaden_case(string):
 
-
-
-        return " ".join([word[0].upper() + word[1:] for word in string.split(" ")])
+    return " ".join([word[0].upper() + word[1:] for word in string.split(" ")])
 
 
 print(to_jaden_case("aa ba c'a"))
+
 
 def sum_of_intervals(array_of_intervals):
 
@@ -31,6 +28,7 @@ def sum_of_intervals(array_of_intervals):
 
     # for index in range(1, len(sorted_array_of_intervals)):
     #     if sorted_array_of_intervals[index] != sorted_array_of_intervals[index - 1]
+
 
 print(sum_of_intervals(data))
 # print(sum_intervals(data8), "should be 8")

@@ -18,7 +18,6 @@
 # 0 <= s <= 59
 
 
-
 def past(h, m, s):
 
     return h * 3_600_000 + m * 60_000 + s * 1_000
@@ -26,8 +25,10 @@ def past(h, m, s):
 
 from datetime import timedelta
 
+
 def past(h, m, s):
     return timedelta(hours=h, minutes=m, seconds=s) // timedelta(milliseconds=1)
 
-print(past(0,1,1))
-print(past(0,1,3))
+
+print(past(0, 1, 1))
+print(past(0, 1, 3))

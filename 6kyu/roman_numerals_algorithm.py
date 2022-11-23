@@ -24,16 +24,13 @@
 #       if digit == 1:
 
 
-
 def solution(number):
     result = ""
     lst = [digit for digit in str(number)]
     for digit in lst:
-        if digit == '1':
-            result += 'I'
+        if digit == "1":
+            result += "I"
 
-
-    
     return result
 
 

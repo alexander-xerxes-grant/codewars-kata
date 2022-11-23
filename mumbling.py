@@ -7,8 +7,9 @@
 # accum("cwAt") -> "C-Ww-Aaa-Tttt"
 # The parameter of accum is a string which includes only letters from a..z and A..Z.
 
+
 def accum(s):
-    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
+    return "-".join(c.upper() + c.lower() * i for i, c in enumerate(s))
 
 
 print(accum("abcd"))
