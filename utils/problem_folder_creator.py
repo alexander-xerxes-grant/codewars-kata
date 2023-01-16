@@ -10,7 +10,7 @@ def _create_solution_file(path: Path) -> None:
 
 def _create_test_file(path: Path) -> None:
     """Creates a test file with the name test.py"""
-    test_file = path / "test.py"
+    test_file = path / "test_solution.py"
     test_file.touch()
 
 
