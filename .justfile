@@ -4,6 +4,10 @@ install:
 local: install
 	poetry run pre-commit install
 
+test difficulty problem_name:
+	poetry run pytest {{difficulty}}/{{problem_name}}
+
+
 lint: flake8 black isort newline-check
 
 lint-fix: black-fix isort-fix
