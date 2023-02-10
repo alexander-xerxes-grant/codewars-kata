@@ -1,21 +1,28 @@
+from collections import Counter
+
+
 class Solution:
     def is_anagram(self, s: str, t: str) -> bool:
+        
+        # alternative way
+        # time complexity depends on the sorting algorithm
+        return sorted(s) == sorted(t)
+        
+        # easy way
+        return Counter(s) == Counter(t)
+        
+        # best time complexity
         if len(s) != len(t):
             return False
         
-        counts = {}
+        count_s, count_t = {}, {}
         
-        for c1, c2 in zip(s, t):
-            if c1 in counts.keys():
-                counts[c1] += 1
-            else:
-                counts[c1] = 1
-            if c2 in counts.keys():
-                counts[c2] -= 1
-            else:
-                counts[c2] = -1
-                
-        for val in counts.values():
-            if val != 0:
+        for i in range(len(s)):
+            count_s[s[i]] = 1 + count_s.get(s[i], 0)
+            count_t[t[i]] = 1 + count_t.get(t[i], 0)
+
+        for c in count_s:
+            if count_s[i] != count_t.get(c, 0):
                 return False
+            
         return True
