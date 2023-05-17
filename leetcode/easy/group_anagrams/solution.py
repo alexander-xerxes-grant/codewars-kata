@@ -6,10 +6,9 @@ class Solution:
     def group_anagrams(self, strs: List[str]) -> List[List[str]]:
         
         # create an empty hashmap where the key:value will be letter counts like "e1, a1, t1": ["eat", "ate", "tea"]
-        result = defaultdict(list)
-        
+      
         # iterate through the strings
-        for s in strs:
+     
             
             # create an array of 0's, one for each letter in the alphabet, this will be the counts of each letter that occurs
             # in a string
