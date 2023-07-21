@@ -1,6 +1,6 @@
 import pytest
 
-from .solution import Solution
+from ..group_anagrams.solution import Solution
 
 
 class TestSolution:
