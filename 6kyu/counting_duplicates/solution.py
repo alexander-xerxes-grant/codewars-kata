@@ -1,5 +1,3 @@
-
-
 def count_duplicates(s):
     # s= s.lower()
     # result = 0
@@ -9,4 +7,6 @@ def count_duplicates(s):
     #         result += 1
     # return result
 
-    return len([character for character in set(s.lower()) if s.lower().count(character) > 1])
+    return len(
+        [character for character in set(s.lower()) if s.lower().count(character) > 1]
+    )
