@@ -1,22 +1,18 @@
-from collections import Counter
-
-
 class Solution:
-    def is_anagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
+    def is_anagram(self, a: str, b: str) -> bool:
+        if len(a) != len(b):
             return False
 
-        s_map = {}
-        t_map = {}
+        a_map, b_map = {}, {}
 
-        for c in s:
-            s_map[c] = 1 + s_map.get(c, 0)
-        for x in t:
-            t_map[x] = 1 + t_map.get(x, 0)
+        for i in range(len(a)):
+            a_map[a[i]] = 1 + a_map.get(a[i], 0)
+            b_map[b[i]] = 1 + b_map.get(b[i], 0)
+            print(a_map)
+            print(b_map)
 
-        for a in t_map.keys():
-            if t_map.get(a, 0) != s_map.get(a, 0):
-                print(a)
+        for i in a_map:
+            if a_map[i] != b_map.get(i, 0):
                 return False
-            else:
-                return True
+
+        return True
