@@ -12,3 +12,4 @@ class TestSolution:
 
         assert solution.is_anagram("rat", "car") == False
         assert solution.is_anagram("anagram", "nagaram") == True
+        assert solution.is_anagram("aacc", "ccac") == False
